@@ -3,12 +3,12 @@ import logo from "../../assets/logo-text.png";
 const Footer = () => {
   return (
     <footer className="container mx-auto border-t border-slate-100 bg-white">
-      <div className="px-6 py-14">
+      <div className="py-14">
 
         <div className=" grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
 
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center md:justify-start">
               <img src={logo} alt="Dev Stack" className="h-8"/>
             </div>
             <p className="mt-4 max-w-xs leading-6 text-slate-500">Curated tools, technologies, and resources for developers building modern software.</p>

@@ -7,10 +7,12 @@ import Technologies from "./Components/Technologies/Technologies";
 function App() {
   return (
     <>
+    <div className="px-1">
       <Navbar/>
       <Hero/>
       <Technologies/>
       <Footer/>
+    </div>
     </>
   );
 }
