@@ -1,12 +1,14 @@
 import "./App.css";
-import Body from "./Components/Body/Body";
+import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
+import Technologies from "./Components/Technologies/Technologies";
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Body/>
+      <Hero/>
+      <Technologies/>
     </>
   );
 }

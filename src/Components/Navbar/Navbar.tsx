@@ -1,7 +1,7 @@
 import logo from "../../assets/logo-text.png"
 const Navbar = () => {
   return (
-    <div className="w-full h-18 bg-[#F1F5F9] fixed shadow-2xs top-0">
+    <div className="w-full h-16 bg-[#F1F5F9] fixed shadow-2xs top-0">
       <div className="lg:container mx-auto max-lg:collapse lg:mb-48  w-full">
         <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
         <label
