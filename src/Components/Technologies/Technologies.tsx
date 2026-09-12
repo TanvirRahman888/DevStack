@@ -69,8 +69,6 @@ const Technologies = ({ technologyPromise }: TechnologyProps) => {
       </div>
 
       <div className=" mt-6 grid grid-cols-1 md:grid-cols-4 gap-5 ">
-        {/* Cards */}
-
         <div className=" md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
           {technologies.map((technology) => (
             <TechnologyCard
@@ -82,9 +80,11 @@ const Technologies = ({ technologyPromise }: TechnologyProps) => {
           ))}
         </div>
 
-        {/* Stack Panel */}
-
-        <YourStack stack={stack} handleRemove={handleRemove} handleRemoveAll={handleRemoveAll}/>
+        <YourStack
+          stack={stack}
+          handleRemove={handleRemove}
+          handleRemoveAll={handleRemoveAll}
+        />
       </div>
     </section>
   );

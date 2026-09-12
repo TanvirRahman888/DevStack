@@ -14,7 +14,7 @@ const TechnologyCard = ({
   isAdded,
 }: TechnologyCardProps) => {
   return (
-    <div className="h-full border rounded-2xl p-3 shadow-md flex flex-col gap-3">
+    <div className="h-full border border-slate-200 rounded-2xl p-3 shadow-md flex flex-col gap-3">
       {/* Header */}
 
       <div className=" flex justify-between ">
@@ -51,7 +51,7 @@ const TechnologyCard = ({
             ${
               isAdded
                 ? "bg-linear-to-r from-emerald-500 to-cyan-500 text-white font-semibold cursor-not-allowed"
-                : "bg-linear-to-r from-[#F97316] to-[#EC4899] text-white font-semibold hover:bg-linear-to-r hover:from-[#EC4899] hover:to-[#F97316]"
+                : "brand-gradient text-white font-semibold hover:bg-linear-to-r hover:from-[#EC4899] hover:to-[#F97316]"
             }
                 `}
       >

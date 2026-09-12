@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="lg:w-1/2 flex flex-col gap-6 text-center md:text-left">
           <h2 className="font-extrabold text-3xl md:text-6xl">
             Build Your Ideal <br />
-            <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+            <span className="brand-gradient bg-clip-text text-transparent">
               Development Stack
             </span>
           </h2>
