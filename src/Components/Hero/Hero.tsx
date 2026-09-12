@@ -16,7 +16,7 @@ const Hero = () => {
             project.
           </p>
           <div className="flex justify-center md:justify-start gap-3 lg:w-1/2">
-            <button className="btn bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-white font-semibold">
+            <button className="btn bg-linear-to-r from-[#F97316] to-[#EC4899] text-white font-semibold hover:bg-linear-to-r hover:from-[#EC4899] hover:to-[#F97316]">
               Explore Technologies
             </button>
             <button className="btn font-semibold px-8">Learn More</button>
