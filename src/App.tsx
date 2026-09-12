@@ -5,10 +5,12 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Technologies from "./Components/Technologies/Technologies";
 import type { iTechnologyType } from "./types/technologiesType";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, Zoom } from "react-toastify";
+import Loader from "./Components/Loader/Loader";
 
-const fetchTechnology = async ():Promise<iTechnologyType[]> => {
+const fetchTechnology = async (): Promise<iTechnologyType[]> => {
   const res = await fetch("/data.json");
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   const data = res.json();
   return data;
 };
@@ -20,24 +22,17 @@ function App() {
       <div className="px-1">
         <Navbar />
         <Hero />
-        <Suspense
-          fallback={
-            <div>
-              <span className="loading loading-spinner loading-xs"></span>
-              <span className="loading loading-spinner loading-sm"></span>
-              <span className="loading loading-spinner loading-md"></span>
-              <span className="loading loading-spinner loading-lg"></span>
-              <span className="loading loading-spinner loading-xl"></span>
-            </div>
-          }
-        >
+        <Suspense fallback={<Loader />}>
           <Technologies technologyPromise={technologyPromise} />
         </Suspense>
         <Footer />
         <ToastContainer
-        position="top-right"
-        autoClose={2000}
-      />
+          hideProgressBar
+          position="top-center"
+          autoClose={1500}
+          theme="colored"
+          transition={Zoom}
+        />
       </div>
     </>
   );
