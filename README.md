@@ -1,5 +1,6 @@
-# 🚀 DevStack
-## **Live Link :** https://dev-stack-opal.vercel.app/
+# DevStack
+## **Live Link :**
+https://dev-stack-opal.vercel.app/
 
 ## 📖 About the Project
 
@@ -41,17 +42,17 @@ Remove a single technology with the **🗑️** button or clear the entire selec
 
 ### 1. What is JSX, and why is it used in React?
 
-JSX is JavaScriptXML, we can write html and javascript in same place.
+JSX is JavaScript XML; we can write HTML and JavaScript in the same place.
 
 
 ### 2. What is the difference between props and state?
 
-Props is passed data from a parent component to a child component and State is data managed in a component.
+Props is passed data from a parent component to a child component, and State is data managed in a component.
 
 
 ### 3. What does the useState hook do, and where did you use it in this project?
 
-useState in component memory, It's works as like variable, and set variable value function.
+useState stores state in component memory. It works like a variable and set variable value function.
 
 
 ### 4. What does the useEffect hook do, and why did you need it to load the JSON data?
